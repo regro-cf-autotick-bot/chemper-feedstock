@@ -1,5 +1,5 @@
 {% set name = "chemper" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/mobleylab/chemper/archive/{{ version }}.tar.gz
-  sha256: d8e1b0f29d005be6ba617f2dcb484706e4d06db1df1f6f4a26aa826e20472c7b
+  sha256: bbc1f587ef01317c4592c6e8b0fd728215eea0e995f547e05d71232cf017531e
 
 
 build:
