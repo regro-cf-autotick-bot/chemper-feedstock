@@ -12,15 +12,15 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
     - numpy
-    - python >=3.6
+    - python >={{ python_min }}
     - rdkit
     - networkx
 
@@ -29,6 +29,7 @@ test:
     - chemper
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
     - python -c "import chemper; print(chemper.__version__)"
